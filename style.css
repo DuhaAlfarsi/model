@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #077565;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Arima:wght@100;200;300&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Comfortaa:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner&family=Montserrat+Alternates:ital,wght@0,100;0,200;1,100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  place-items: center;
+  padding: 2rem;
+}
+
+.hero-left,
+.hero-right {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+}
+.hero p {
+  margin-bottom: 3rem;
+}
+.hero h1 {
+  font-size: 40px;
+}
+
+.open_model {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .hero img {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    text-align: center;
+    margin: auto;
+  }
+}
